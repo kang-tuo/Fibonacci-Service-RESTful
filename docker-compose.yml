@@ -1,0 +1,13 @@
+version: '2'
+services:
+    web:
+        build: .
+        ports:
+            - "5000:5000"
+        volumes:
+            - ./config.ini:/app/config/config.ini
+        depends_on:
+            - redis
+    redis:
+        image: redis
+
