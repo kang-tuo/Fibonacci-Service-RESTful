@@ -3,7 +3,7 @@ services:
     web:
         build: .
         ports:
-            - "5000:5000"
+            - "3000:3000"
         volumes:
             - ./config.ini:/app/config/config.ini
         depends_on:
